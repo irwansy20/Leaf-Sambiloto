@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutActivity">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text= "@string/hasil"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/pembahasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judul">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pembahasan"
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutDescription="@xml/activity_about_xml_constraintlayout_scene"
+            app:layout_constraintTop_toBottomOf="@id/pembahasan">
+
+            <ImageView
+                android:id="@+id/logoMenu1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sehat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center_horizontal"
+                android:text="@string/title_menu_1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/logoMenu1"
+                app:layout_constraintStart_toStartOf="@+id/logoMenu1"
+                app:layout_constraintTop_toBottomOf="@+id/logoMenu1" />
+
+            <ImageView
+                android:id="@+id/logoMenu2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ringan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleMenu2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center_horizontal"
+                android:text="@string/title_menu_2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/logoMenu2"
+                app:layout_constraintStart_toStartOf="@+id/logoMenu2"
+                app:layout_constraintTop_toBottomOf="@+id/logoMenu2" />
+
+            <ImageView
+                android:id="@+id/logoMenu3"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sedang"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleMenu3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center_horizontal"
+                android:text="@string/title_menu_3"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/logoMenu3"
+                app:layout_constraintStart_toStartOf="@+id/logoMenu3"
+                app:layout_constraintTop_toBottomOf="@+id/logoMenu3" />
+
+            <ImageView
+                android:id="@+id/logoMenu4"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:src="@drawable/berat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleMenu4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center_horizontal"
+                android:text="@string/title_menu_4"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/logoMenu4"
+                app:layout_constraintStart_toStartOf="@+id/logoMenu4"
+                app:layout_constraintTop_toBottomOf="@+id/logoMenu4" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/menu2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleMenu1"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/green_primary" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="@+id/menu1"
+                app:layout_constraintEnd_toStartOf="@+id/menu3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/menu1"
+                app:layout_constraintTop_toTopOf="@+id/menu1"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/green_primary" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="@+id/menu2"
+                app:layout_constraintEnd_toStartOf="@+id/menu4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/menu2"
+                app:layout_constraintTop_toTopOf="@+id/menu2"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/green_primary" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="32dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="@+id/menu3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/menu3"
+                app:layout_constraintTop_toTopOf="@+id/menu3"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/green_primary" />
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <TextView
+            android:id="@+id/pengembang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Pengembang Aplikasi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout"/>
+
+        <TextView
+            android:id="@+id/peneliti1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "1) Dr. Sulistyo Puspitodjati \n(Prodi Informatika, Fakultas Teknologi Industri, Universitas Gunadarma)"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/pengembang"
+            app:layout_constraintTop_toBottomOf="@id/pengembang"/>
+
+        <TextView
+            android:id="@+id/peneliti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "2) Dr. Setyowati Retno Djiwanti \n(Pusat Riset Hortikultura dan Perkebunan, BRIN)"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/peneliti1"
+            app:layout_constraintTop_toBottomOf="@id/peneliti1"/>
+
+        <TextView
+            android:id="@+id/peneliti3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "3) Muhammad Irwansyah \n(Mahasiswa S1 Prodi Informatika Tahun 2019, \nFakultas Teknologi Industri, Universitas Gunadarma)"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="@id/peneliti2"
+            app:layout_constraintTop_toBottomOf="@id/peneliti2"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

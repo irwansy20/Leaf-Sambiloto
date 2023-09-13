@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sambiloto Detection</string>
+    <string name="splash">DETEKSI INFEKSI NEMATODA \n DAUN SAMBILOTO</string>
+    <string name="logo_splash">logo_Splash</string>
+    <string name="logo_preview">logo_preview</string>
+    <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="deteksi_gambar">Deteksi Gambar</string>
+    <string name="tingkat_kesehatan">Tingkat Kelayakan</string>
+    <string name="_0">0%</string>
+    <string name="daun_sambiloto_sehat">Daun Sambiloto Sehat</string>
+    <string name="kamera">Kamera</string>
+    <string name="galeri">Galeri</string>
+    <string name="hasil">Aplikasi deteksi infeksi nematoda daun sambiloto (<i>Aphelenchoides fragariae</i>)</string>
+    <string name="pembahasan">  Tanaman obat sambiloto (<i>Andrographis paniculata</i>) merupakan salah satu bahan baku dalam formula obat/ jamu tradisonal. Salah satu kendala dalam budidayanya adalah serangan nematoda daun <i>A. fragariae</i> pada bibit dan tanaman sambiloto. Gejala khas serangan nematoda berupa bercak nekrotik yang meluas yang dibatasi oleh tulang-tulang daun. Pada tahap gejala awal/ ringan, daun tampak sehat tidak menunjukkan gejala khas walaupun telah terinfeksi oleh nematode dalam populasi sangat rendah. Penggunaan bibit sambiloto terinfeksi dapat menjadi sumber penyebaran nematoda di lapang. Deteksi awal infeksi nematoda daun dengan teknologi berbasis android diharapkan dapat diterapkan secara praktis oleh pengguna dilapang dalam menentukan bibit sehat bebas nematoda untuk budidaya. </string>
+
+    <string name="title_menu_1">Sehat</string>
+    <string name="title_menu_2">Ringan</string>
+    <string name="title_menu_3">Sedang</string>
+    <string name="title_menu_4">Berat</string>
+</resources>
