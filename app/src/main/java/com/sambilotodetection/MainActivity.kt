@@ -159,6 +159,13 @@ class MainActivity : AppCompatActivity() {
         updateProgressBar()
         binding.result.text = "Daun Sambiloto $output"
 
+        val s = StringBuilder()
+        for (i in 0 until itemList.size) {
+            s.append("${itemList[i]}: ${String.format("%.1f%%", confidences[i] * 100)}\n")
+        }
+
+        binding.confidence.setText(s)
+
         model.close()
     }
 
